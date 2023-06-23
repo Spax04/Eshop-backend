@@ -26,6 +26,7 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message })
 })
 
+
 // Connection to mongoDb and running server
 mongoose
   .connect(process.env.MONGODB_URI)
